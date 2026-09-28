@@ -43,7 +43,6 @@ export default function ChatMessage({ message, onFeedback }) {
           )}
         </div>
 
-        {/* Feedback UI (Only for AI) */}
         {isAI && (
           <div className="feedback-actions">
             {!showStars && !message.rating && (
@@ -66,7 +65,6 @@ export default function ChatMessage({ message, onFeedback }) {
         )}
       </div>
 
-      {/* Feedback Modal for Thumbs Down */}
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">

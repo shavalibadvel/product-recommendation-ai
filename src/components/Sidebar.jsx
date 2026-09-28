@@ -10,12 +10,10 @@ export default function Sidebar({ onNewSuggestion }) {
         <span>💬 Want new suggestion?</span>
       </div>
       <div>
-        {/* Test expects an anchor tag with href="/" containing "Want new suggestion?" */}
         <Link to="/" className="new-chat" onClick={onNewSuggestion}>
           Want new suggestion?
         </Link>
         
-        {/* Test expects an anchor tag with href="/history" */}
         <Link 
           to="/history" 
           className={`history-btn ${location.pathname === '/history' ? 'active' : ''}`}
